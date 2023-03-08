@@ -1,0 +1,30 @@
+﻿@model AkademiPlus_Transportation.Models.TblAdmin
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+
+<div class="container">
+
+    <h2>Profil Bilgileri Güncelleme</h2>
+    <br />
+
+    <form method="post">
+        <label>Kullanıcı Adı</label>
+        @Html.TextBoxFor(a => a.UserName, new { @class = "form-control" })
+        <br />
+
+        <label>Şifre</label>
+        @Html.TextBoxFor(a => a.Password, new { @class = "form-control" })
+        <br />
+
+        <label>Kullanıcı Rol</label>
+        @Html.TextBoxFor(a => a.AdminRole, new { @class = "form-control" })
+        <br />
+
+        <button class="btn btn-primary">Güncelle</button>
+    </form>
+</div>

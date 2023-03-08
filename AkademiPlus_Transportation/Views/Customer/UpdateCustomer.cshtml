@@ -1,0 +1,30 @@
+﻿@model AkademiPlus_Transportation.Models.TblCustomer
+
+@{
+    ViewBag.Title = "UpdateCustomer";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<form method="post">
+    <label>Müşteri ID</label>
+    @Html.TextBoxFor(c => c.CustomerID, new { @class = "form-control" })
+    <br />
+
+    <label>Müşteri Adı</label>
+    @Html.TextBoxFor(c => c.CustomerName, new { @class = "form-control" })
+    <br />
+
+    <label>Müşteri Soyadı</label>
+    @Html.TextBoxFor(c => c.CustomerSurname, new { @class = "form-control" })
+    <br />
+
+    <label>Şehir</label>
+    @Html.TextBoxFor(c => c.CustomerCity, new { @class = "form-control" })
+    <br />
+
+    <label>Telefon</label>
+    @Html.TextBoxFor(c => c.CustomerPhone, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-success">Müşteriyi Güncelle</button>
+</form>

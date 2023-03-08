@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+
+<body>
+
+    <!--/Banner-Start-->
+    <!-- main-slider -->
+    @Html.Action("PartialSlider")
+    <!-- //main-slider -->
+    <!--/grids-->
+    @Html.Action("PartialAbout")
+    <!--//grids-->
+    <!--/bottom-3-grids-->
+    @Html.Action("PartialDetail")
+    <!--//bottom-3-grids-->
+    <!--/w3-grids-->
+    @Html.Action("PartialMap")
+    <!--//w3-grids-->
+    <!-- features section -->
+    @Html.Action("PartialFeatures")
+    <!--//features section -->
+    <!--/w3l-grids-->
+    @Html.Action("PartialGrids")
+    <!--//w3l-grids-->
+    <!--/testimonials-->
+    @Html.Action("PartialTestimonials")
+    <!--//testimonials-->
+    <!--/w3l-newsletter-->
+    @Html.Action("PartialNewsletter")
+    <!--//w3l-newsletter-->
+
+</body>
+
+</html>

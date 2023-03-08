@@ -1,0 +1,42 @@
+﻿@using PagedList
+@using PagedList.Mvc
+@model PagedList.IPagedList<AkademiPlus_Transportation.Models.TblProduct>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2>Ürünler Listesi</h2>
+
+<table class="table table-bordered" style="margin-top:50px;">
+    <tr>
+        <th>#</th>
+        <th>Ürün Adı</th>
+        <th>Kategori Adı</th>
+        <th>Ürün Tipi</th>
+        <th>Ürün Boyutu</th>
+        <th>Ürün Açıklaması</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var product in Model)
+    {
+        <tr>
+            <td>@product.ProductID</td>
+            <td>@product.ProductName</td>
+            <td>@product.TblCategory.CategoryName</td>
+            <td>@product.ProductSizeType</td>
+            <td>@product.ProductSize</td>
+            <td>@product.ProductDescription</td>
+            <td><a href="/Product/DeleteProduct/@product.ProductID" class="btn btn-danger">Sil</a></td>
+            <td><a href="/Product/UpdateProduct/@product.ProductID" class="btn btn-success">Güncelle</a></td>
+        </tr>
+    }
+
+</table>
+
+@Html.PagedListPager((IPagedList)Model, sayfa => Url.Action("Index", new { sayfa }))
+
+<a href="/Product/AddProduct/" class="btn btn-primary">Yeni Ürün Ekle</a>

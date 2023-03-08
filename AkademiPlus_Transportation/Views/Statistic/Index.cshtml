@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div class="container">
+    <div class="card" style="width: 200px; height: 150px; background-color: #ff6a00; text-align: center; padding-top: 65px; float: left">
+        Kategori Sayısı: @ViewBag.cityCount
+    </div>
+
+    <div class="card" style="width: 200px; height: 150px; background-color: #ff6a00; text-align: center; margin-left: 15px; padding-top: 65px; float: left ">
+        Ankaradaki Müşteriler: @ViewBag.cityAnkara
+    </div>
+
+    <div class="card" style="width: 200px; height: 150px; background-color: #ff6a00; text-align: center; margin-left: 15px; padding-top: 65px; float: left ">
+        Kategori Sayısı: @ViewBag.categoryCount
+    </div>
+
+    <div class="card" style="width: 200px; height: 150px; background-color: #ff6a00; text-align: center; margin-left: 15px; padding-top: 65px; float: left ">
+        1 Numaralı Müşteri Şehri: @ViewBag.citySelect
+    </div>
+</div>
