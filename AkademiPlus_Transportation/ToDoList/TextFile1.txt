@@ -1,9 +1,0 @@
-﻿--Login
---Register
---Rolleme
---Contact
---Mesajlaşma
---Authorize
---Authentication
-
---Asp.Net Core 3.1

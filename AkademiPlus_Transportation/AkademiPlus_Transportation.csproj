@@ -149,7 +149,6 @@
     <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Controllers\ServiceController.cs" />
     <Compile Include="Controllers\SettingController.cs" />
-    <Compile Include="Controllers\StatisticController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -252,9 +251,6 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Templates\Admin-Panel-Login\dist\index.html" />
-    <Content Include="Templates\Admin-Panel-Login\dist\style.css" />
-    <Content Include="Templates\Admin-Panel-Login\license.txt" />
     <Content Include="Templates\CodePen-Login\dist\index.html" />
     <Content Include="Templates\CodePen-Login\dist\style.css" />
     <Content Include="Templates\CodePen-Login\license.txt" />
@@ -388,7 +384,6 @@
     <Content Include="Templates\Transpolar-Starter\index.html" />
     <Content Include="Templates\Transpolar-Starter\services.html" />
     <Content Include="Templates\Transpolar-Starter\starter-license-W3Layouts.txt" />
-    <Content Include="ToDoList\TextFile1.txt" />
     <Content Include="Views\MainPage\Index.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -417,7 +412,6 @@
     <Content Include="Views\Product\Index.cshtml" />
     <Content Include="Views\Product\AddProduct.cshtml" />
     <Content Include="Views\Product\UpdateProduct.cshtml" />
-    <Content Include="Views\Statistic\Index.cshtml" />
     <Content Include="Views\Profile\Index.cshtml" />
     <Content Include="Views\Profile\Partial1.cshtml" />
     <Content Include="Views\Profile\Partial2.cshtml" />
@@ -463,9 +457,6 @@
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\Register\Index.cshtml" />
     <Content Include="Views\Setting\Index.cshtml" />
-    <Content Include="Templates\Admin-Panel-Login\README.markdown" />
-    <Content Include="Templates\Admin-Panel-Login\src\index.pug" />
-    <Content Include="Templates\Admin-Panel-Login\src\style.scss" />
     <Content Include="Templates\CodePen-Login\README.markdown" />
   </ItemGroup>
   <ItemGroup>
